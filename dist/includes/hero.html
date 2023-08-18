@@ -1,13 +1,13 @@
-<section class="flex flex-row">
-  <div class="bg-secondary w-1/2 flex flex-col justify-center items-center">
+<section class="flex flex-col-reverse relative tablet:flex-row">
+  <div class="bg-secondary w-4/5 h-[60vh] tablet:h-auto top-[10vh] bottom-[10vh] left-[10vw] right-[10vw] absolute tablet:static tablet:w-1/2 flex flex-col justify-center items-center">
     <div class="container-sm">
       <h2 class="headline">Nowoczesna aranżacja Twojego ogrodu</h2>
-      <p class="my-12">
+      <p class="my-3 tablet:my-12">
         Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
         realizacji. Oferujemy kompleksowy zakres usług z indywidualnym
         podejściem do każdego projektu.
       </p>
-      <div class="flex flex-row justify-center gap-6 mt-5">
+      <div class="flex flex-col tablet:flex-row justify-center gap-6 mt-3 tablet:mt-5">
         <a href="#footer" class="primary">Skontaktuj się z nami</a>
         <a href="#realizacje" class="secondary"
           >Zobacz nasze realizacje <img src="../assets/green-arrow.svg"
@@ -15,5 +15,9 @@
       </div>
     </div>
   </div>
-  <img class="w-1/2" src="assets/images/hero/hero-photo.png" alt="hero image" />
+  <img
+    class="w-full tablet:w-1/2 sm:h-auto h-[80vh]"
+    src="../assets/sections/hero/hero-photo.webp"
+    alt="hero image"
+  />
 </section>
