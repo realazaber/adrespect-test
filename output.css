@@ -1081,5 +1081,15 @@ section .card a img,
   .tablet\:flex-row {
     flex-direction: row;
   }
+
+  .tablet\:px-\[110px\] {
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .tablet\:py-\[60px\] {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=output.css.map */
