@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  * {
+    @apply scroll-smooth overflow-x-hidden;
+  }
+  section {
+    @apply w-full;
+  }
+  section .projects .project,
+  nav .projects .project,
+  footer .projects .project {
+    @apply col-span-1 my-5 mx-auto;
+  }
+  section .container-sm,
+  section .container,
+  nav .container-sm,
+  nav .container,
+  footer .container-sm,
+  footer .container {
+    @apply mx-auto;
+  }
+  section .container-sm a,
+  section .container a,
+  nav .container-sm a,
+  nav .container a,
+  footer .container-sm a,
+  footer .container a {
+    @apply w-fit p-3 flex flex-row justify-center items-center gap-2 hover:cursor-pointer;
+  }
+  section .container-sm a.primary,
+  section .container a.primary,
+  nav .container-sm a.primary,
+  nav .container a.primary,
+  footer .container-sm a.primary,
+  footer .container a.primary {
+    @apply bg-primary text-white rounded-full;
+  }
+  section .container-sm a.secondary,
+  section .container a.secondary,
+  nav .container-sm a.secondary,
+  nav .container a.secondary,
+  footer .container-sm a.secondary,
+  footer .container a.secondary {
+    @apply bg-transparent border-[1px] border-primary text-primary rounded-full;
+  }
+  section .container-sm a.third,
+  section .container a.third,
+  nav .container-sm a.third,
+  nav .container a.third,
+  footer .container-sm a.third,
+  footer .container a.third {
+    @apply text-white border-[1px] border-white bg-primary rounded-full;
+  }
+  section .container-sm .navi-small,
+  section .container .navi-small,
+  nav .container-sm .navi-small,
+  nav .container .navi-small,
+  footer .container-sm .navi-small,
+  footer .container .navi-small {
+    @apply text-xs my-5 block;
+  }
+  section .container-sm,
+  nav .container-sm,
+  footer .container-sm {
+    @apply w-3/5;
+  }
+  section .container,
+  nav .container,
+  footer .container {
+    @apply tablet:w-[90%];
+  }
+  section section,
+  nav section,
+  footer section {
+    @apply min-h-[740px];
+  }
+  section .headline,
+  nav .headline,
+  footer .headline {
+    @apply text-2xl phablet:text-6xl contents;
+  }
+  section p,
+  nav p,
+  footer p {
+    @apply text-lg;
+  }
+  section .card,
+  nav .card,
+  footer .card {
+    @apply w-[30%] h-[370px] bg-white rounded-md p-12;
+  }
+  section .card h3,
+  nav .card h3,
+  footer .card h3 {
+    @apply text-[28px] font-semibold;
+  }
+  section .card a,
+  nav .card a,
+  footer .card a {
+    @apply p-0 pt-3 mt-auto flex flex-row text-primary underline text-[16px];
+  }
+  section .card a img,
+  nav .card a img,
+  footer .card a img {
+    @apply underline;
+  }
+}/*# sourceMappingURL=main.css.map */

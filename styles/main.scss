@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  * {
+    @apply scroll-smooth overflow-x-hidden;
+  }
+
+  section {
+    @apply w-full;
+  }
+
+  section,
+  nav,
+  footer {
+    .projects {
+      .project {
+        @apply col-span-1 my-5 mx-auto;
+      }
+    }
+
+    .container-sm,
+    .container {
+      @apply mx-auto;
+      a {
+        @apply w-fit p-3 flex flex-row justify-center items-center gap-2 hover:cursor-pointer;
+      }
+
+      a.primary {
+        @apply bg-primary text-white rounded-full;
+      }
+      a.secondary {
+        @apply bg-transparent border-[1px] border-primary text-primary rounded-full;
+      }
+      a.third {
+        @apply text-white border-[1px] border-white bg-primary rounded-full;
+      }
+
+      .navi-small {
+        @apply text-xs my-5 block;
+      }
+    }
+
+    .container-sm {
+      @apply w-3/5;
+    }
+
+    .container {
+      @apply tablet:w-[90%];
+    }
+
+    section {
+      @apply min-h-[740px];
+    }
+
+    .headline {
+      @apply text-2xl phablet:text-6xl contents;
+    }
+
+    p {
+      @apply text-lg;
+    }
+
+    .card {
+      @apply w-[30%] h-[370px] bg-white rounded-md p-12;
+
+      h3 {
+        @apply text-[28px] font-semibold;
+      }
+
+      p {
+      }
+
+      a {
+        @apply p-0 pt-3 mt-auto flex flex-row text-primary underline text-[16px];
+
+        img {
+          @apply underline;
+        }
+      }
+    }
+  }
+}
