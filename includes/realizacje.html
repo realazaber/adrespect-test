@@ -1,7 +1,7 @@
 <section class="bg-secondary py-[120px]">
-  <div class="container">
+  <div class="container my-3">
     <span class="navi-small text-primary">Realizacje</span>
-    <h3 class="headline">Nasze projekty</h3>
+    <h3 class="headline contents">Nasze projekty</h3>
   </div>
   <div class="relative">
     <div class="projects columns-1 phablet:columns-2 tablet:columns-3">
@@ -16,10 +16,15 @@
       <img class="project" src="assets/sections/realizacje/Photo.webp" />
     </div>
     <img
+      id="gradient"
       class="absolute bottom-0 w-[100vw]"
       src="assets/sections/realizacje/gradient.webp"
       alt="gradient"
     />
-    <a class="primary mx-auto">Rozwiń</a>
+  </div>
+  <div class="container">
+    <a id="expandButton" class="secondary mx-auto"
+      >Rozwiń <img src="assets/down-arrow.svg"
+    /></a>
   </div>
 </section>
