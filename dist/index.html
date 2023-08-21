@@ -49,6 +49,21 @@
     <!--Footer end-->
 
     <script src="./index.js"></script>
+    <script>
+      // Define your function
+      function onWindowLoad() {
+        const expandButton = document.getElementById("expandButton");
+        const gradientImage = document.getElementById("gradient");
+
+        expandButton.addEventListener("click", function () {
+          gradientImage.style.display = "none"; // Hide the gradient image
+          expandButton.style.display = "none"; // Hide the button
+        });
+      }
+
+      // Attach the function to window.onload event
+      window.onload = onWindowLoad;
+    </script>
     <script src="./tailwind.config.js"></script>
   </body>
 </html>
